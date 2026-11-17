@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Fundo geral com um tom azul-água bem suave e relaxante */
+    background-color: #f0f7f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    /* Cartão branco com cantos bem arredondados e sombra suave */
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 120, 150, 0.08);
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #e1f0f5;
+}
+
+h2 {
+    margin-bottom: 25px;
+    /* Tom de azul amigável e acolhedor */
+    color: #2b7a95;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #55717a;
+    display: block;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    background-color: #f9fbfc;
+    border: 1px solid #cce3ec;
+    color: #333333;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #5bc0be;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(91, 192, 190, 0.15);
+    outline: none;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+    accent-color: #3aafa9;
+}
+
+.checkbox-container label {
+    font-weight: normal;
+    cursor: pointer;
+    color: #667d85;
+}
+
+.btn-primary-entrar {
+    width: 100%;
+    padding: 12px;
+    /* Tom de verde-água/turquesa alegre e profissional */
+    background-color: #3aafa9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-bottom: 15px;
+}
+
+.btn-primary-entrar:hover {
+    background-color: #2b938f;
+}
+
+.btn-primary-entrar:active {
+    transform: scale(0.98);
+}
+
+.link {
+    display: block;
+    text-align: center;
+    color: #3aafa9;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #2b938f;
+}

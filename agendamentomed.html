@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alergologia Pediátrica</title>
+    <link rel="stylesheet" href="agendamentomed.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Agendamento de Consulta</h2>
+
+        <form>
+            <h3>Dados do Responsável</h3>
+
+            <label for="responsavel">Nome do Responsável*</label>
+            <input type="text" id="responsavel" name="responsavel" required placeholder="Digite seu nome">
+
+            <label for="cpf">CPF do Responsável*</label>
+            <input type="text" id="cpf" name="cpf" required placeholder="Digite seu CPF">
+
+            <label for="telefone">Telefone para Contato*</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+
+            <h3>Dados da Criança</h3>
+
+            <label for="nome">Nome Completo da Criança*</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite o nome da criança">
+
+            <label for="nascimento">Data de Nascimento*</label>
+            <input type="date" id="nascimento" name="nascimento" required>
+
+            <label for="alergia">Tipo de Alergia ou Suspeita</label>
+            <select id="alergia" name="alergia">
+                <option value="">Selecione uma opção</option>
+                <option value="alimentar">Alergia Alimentar</option>
+                <option value="respiratoria">Alergia Respiratória</option>
+                <option value="pele">Alergia de Pele</option>
+                <option value="medicamentos">Alergia a Medicamentos</option>
+                <option value="outra">Outra ou Não Identificada</option>
+            </select>
+
+            <label for="sintomas">Descrição dos Sintomas</label>
+            <textarea id="sintomas" name="sintomas" placeholder="Descreva os sintomas apresentados pela criança"></textarea>
+
+            <h3>Dados da Consulta</h3>
+
+            <label for="data">Data Desejada*</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="horario">Horário Desejado*</label>
+            <input type="time" id="horario" name="horario" required>
+
+            <label for="observacoes">Observações Adicionais</label>
+            <textarea id="observacoes" name="observacoes" placeholder="Informações adicionais"></textarea>
+
+            <button type="submit" class="btn-primary-entrar" onclick="return false;">Agendar Consulta</button>
+            <a href="login.html" class="link">Voltar à Iniciar Sessão</a>
+        </form>
+    </div>
+</body>
+</html>
